@@ -1,0 +1,409 @@
+
+.loginForma {
+    width: 220px;
+    background-color: black;
+    text-align: center;
+    border: 1rem solid blue;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+input{
+    margin: 0.3rem;
+}
+
+input[type="email"], [type="password"]{
+    border: 0.1rem solid rgb(220, 215, 215);
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    width: 12rem;
+    transition: box-shadow 0.5s;
+}
+
+input[type="email"]:focus, [type="password"]:focus{
+    box-shadow: 0 0 0 0.15rem rgba(24, 117, 255, 0.25);
+    border: 0.1rem solid rgb(24, 117, 255, 0.25);
+    outline: 0;
+}
+
+input[type="email"]:hover, [type="password"]:hover{
+    border: 0.1rem solid rgb(24, 117, 255, 0.25);
+    outline: 0;
+}
+
+button {
+    border-radius: 2rem;
+    border: none;
+    height: 2.2rem;
+    background-color: #0d6efd;
+    color: white;
+    margin: 0.5rem;
+    width: 100px;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #277bfa;
+}
+
+
+
+.error-message{
+    color: red;
+}
+
+.error-message{
+    font-size: small;
+}
+
+.ulazna-poruka {
+    color: yellow;
+    text-align: center;
+    font-size:60px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+
+p{
+color: black;
+size: 10px;
+}
+
+h1 {
+  position: absolute;
+    top: 20%;
+    right: 40%;
+    transform: translate(50%,-50%);
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 40px;
+    font-weight: 700;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+
+
+}
+div {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
+
+
+
+
+
+
+.naslovna{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 30px;
+
+}
+header{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+body{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 30px;
+
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 10px;
+}
+
+.user {
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin: 0px;
+
+
+}
+.user-name {
+color: white;
+background-color: blue;
+display: inline-block;
+margin: 0px;
+}
+
+.class_veslaci{
+   background-color:white;
+  bottom: 10%;
+  right: 50%;
+  width: 40%
+  border: 3px solid #73AD21;
+    margin: 250px;
+    display: inline-block;
+
+    box-shadow: 0 0 5px blue;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+.class-image{
+    margin: 2px;
+    width:100%;
+    height: 400px;
+}
+
+.class-name{
+    font-size: large;
+    font-weight: 600;
+    margin: 2px;
+}
+
+.class-button{
+    color: white;
+    padding: 10px 20px 10px 20px;
+
+    font-size: large;
+    background-color: rgb(0, 67, 122);
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    content-align:center;
+}
+
+
+.veslaci {
+display: inline-block;
+justify-content: center;
+align-items: center;
+}
+.gumb_musulin {
+
+    color: white;
+    padding: 10px 20px 10px 20px;
+
+    font-size: large;
+    background-color: rgb(0, 67, 122);
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    content-align:center;
+
+
+}
+
+.gumb_musulin::before{
+    content: "Klikni";
+}
+
+
+.gumb_loncar {
+
+    color: white;
+    padding: 10px 20px 10px 20px;
+    font-size: large;
+    background-color: rgb(0, 67, 122);
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    content-align:center;
+
+}
+
+.gumb_loncar::before{
+    content: "Klikni";
+}
+
+
+.prikaz_top_10{
+    color: blue;
+    text-align: center;
+    font-size:35px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+
+}
+
+.gumb_rez{
+
+    color: white;
+    padding: 10px 20px 10px 20px;
+    font-size: large;
+    background-color: rgb(0, 67, 122);
+    border: none;
+    border-radius: 5px;
+    -webkit-text-stroke-width: 0px;
+}
+.unazad_korisnik{
+
+    visibility: visible;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    font-size: large;
+    background-color: rgb(0, 67, 122);
+    border: none;
+    border-radius: 5px;
+    margin-left: auto;
+     margin-right: auto;
+}
+.unazad_korisnik::before{
+    content: "Nazad";
+}
+.odjava_korisnika{
+    background-color:white;
+    color: blue;
+    padding: 10px 20px 10px 20px;
+    font-size: large;
+
+    border: none;
+    border-radius: 5px;
+    margin-left: auto;
+     margin-right: auto;
+}
+.odjava_korisnika::before{
+    content: "Odjava";
+}
+.centar{
+    text-align: center;
+}
+.right{
+    background-color:white;
+    margin-top: -20%;
+    margin-left: 70%;
+    float: right;
+
+    padding: 10px 20px 10px 20px;
+    font-size: large;
+
+    border: none;
+    border-radius: 5px;
+    margin-left: auto;
+     margin-right: auto;
+
+     border: 3px solid #73AD21;
+
+
+    box-shadow: 0 0 5px blue;
+}
+
+h2{
+font-family: "Arial Black", sans-serif;
+  font-size: 4.5em;
+  letter-spacing: -1px;
+  color: white;
+    border-style: solid;
+    border-width: medium;
+    border-color: blue;
+    text-align: center;
+    outline: 5px dotted blue;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+table.zadnji {
+    display: none;
+    margin-left: auto;
+     margin-right: auto;
+    visibility: hidden;
+    border: 4px solid #555555;
+    background-color: #555555;
+    width: 400px;
+
+    text-align: center;
+    border-collapse: collapse;
+
+}
+table.zadnji td, table.zadnji th {
+    width: 400px;
+  border: 1px solid #555555;
+  padding: 4px 7px;
+}
+table.zadnji tbody td {
+  font-size: 13px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+table.zadnji tr:nth-child(even) {
+  background: aqua;
+}
+table.zadnji td:nth-child(even) {
+  background: aqua;
+}
+table.zadnji tfoot td {
+  font-size: 13px;
+}
+table.zadnji tfoot .links {
+  text-align: right;
+}
+table.zadnji tfoot .links a{
+  display: inline-block;
+  background: #FFFFFF;
+  background: aqua;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+table.top {
+    display: none;
+    visibility: hidden;
+    margin-left: auto;
+     margin-right: auto;
+    border: 4px solid #555555;
+    background-color: #555555;
+    width: 400px;
+    text-align: center;
+    border-collapse: collapse;
+
+}
+table.top td, table.top th {
+    width: 400px;
+  border: 1px solid #555555;
+  padding: 4px 7px;
+}
+table.top tbody td {
+  font-size: 13px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+table.top tr:nth-child(even) {
+  background: aqua;
+}
+table.top td:nth-child(even) {
+  background: aqua;
+}
+table.top tfoot td {
+  font-size: 13px;
+}
+table.top tfoot .links {
+  text-align: right;
+}
+table.top tfoot .links a{
+  display: inline-block;
+  background: #FFFFFF;
+  background: aqua;
+  padding: 2px 8px;
+  border-radius: 5px;
+}

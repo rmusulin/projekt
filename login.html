@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"  />
+  </head>
+
+  <body>
+  <style>
+      body
+      {
+      background-image:url({{url_for('static',filename='images/loginsl.jpg')}})
+      }
+
+  </style>
+    <h1>  Dobrodošli na login stranicu za prikaz mjerenja sile na veslu!  </h1>
+        <div class="loginForma">  <form action="/login" method="post">
+
+      <input type="email" placeholder="Email address" name="email"/>
+      <input type="password" placeholder="Password" name="password"/>
+      {% if error %}
+        <p class="error-message">{{error}}</p>
+      {% endif %}
+      <button>Log in</button>
+    </form> </div>
+</body>
+
+</html>

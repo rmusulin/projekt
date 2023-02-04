@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>REZULTATI{% for item in podaci %}{{item.ime}}{{item.prezime}} {% endfor %}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"  />
+</head>
+<body>
+<style>
+      body
+      {
+      background-image:url({{url_for('static',filename='images/voda.jpg')}})
+      }
+  </style>
+<h2> Rezultati {% for item in podaci %} {{item.ime}} {{item.prezime}} {% endfor %}  </h2>
+
+<div class="zadnjih_10">
+    <p class="prikaz_top_10">Prikaz zadnjih 10 zaveslaja
+
+    <button class="gumb_rez"  onclick="showElement()">
+            Prikaži
+    </button>
+
+    <button class="gumb_rez"  onclick="hideElement()">
+            Sakrij
+    </button>
+    </p>
+    <script type="text/javascript">
+        function showElement() {
+            element = document.querySelector('.zadnji');
+            element.style.visibility = 'visible';
+            element.style.display = 'block';
+        }
+
+        function hideElement() {
+            element = document.querySelector('.zadnji');
+            element.style.visibility = 'hidden';
+            element.style.display = 'none';
+
+        }
+    </script>
+    <table class="zadnji">
+        <tbody>
+        <tr>
+        <th>Vrijeme</th>
+        <th>Sila</th>
+        </tr>
+        <ul>
+        {% for item in data_zadnji %}
+        <tr>
+        <td>{{item.vrijeme}}</td>
+        <td>{{item.vrijednost}}</td>
+        </tr>
+        {% endfor %}
+        </ul>
+        </tbody>
+        </table>
+</div>
+
+
+<div class="top10">
+    <p class="prikaz_top_10">Prikaz 10 zaveslaja sa najvećom silom
+    <button class="gumb_rez" onclick="showElementi()">
+            Prikaži
+    </button>
+
+    <button class="gumb_rez"  onclick="hideElementi()">
+            Sakrij
+    </button>
+    </p>
+    <script type="text/javascript">
+        function showElementi() {
+            element = document.querySelector('.top');
+            element.style.visibility = 'visible';
+            element.style.display = 'block';
+        }
+
+        function hideElementi() {
+            element = document.querySelector('.top');
+            element.style.visibility = 'hidden';
+            element.style.display = 'none';
+        }
+    </script>
+    <table class="top">
+        <tbody>
+        <tr>
+        <th>Vrijeme</th>
+        <th>Sila</th>
+        </tr>
+        <ul>
+        {% for item in data_top %}
+        <tr>
+        <td>{{item.vrijeme}}</td>
+        <td>{{item.vrijednost}}</td>
+        </tr>
+        {% endfor %}
+        </ul>
+        </tbody>
+        </table>
+</div>
+<div class="centar">
+    {% if session['id_uloge'] == 0 %}
+        <form action="/nazad" method="get">
+            <button class="unazad_korisnik" ></button>
+        </form>
+     {% endif %}
+</div>
+<div class="centar">
+    <form action="/login" method="get">
+        <button class="odjava_korisnika" ></button>
+    </form>
+</div>
+
+
+</body>
+
+</html>
+

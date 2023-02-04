@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Naslovna stranica</title>
+    <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet"  />
+</head>
+<body class="naslovna">
+<style>
+      body
+      {
+      background-image:url({{url_for('static',filename='images/veslanje.jpg<Y')}})
+      }
+  </style>
+
+<main>
+  <p class="ulazna-poruka" >Dobrodošli na stranicu za mjerenje sile zaveslaja!</p>
+
+    <div class="veslaci">
+
+        {% for i in korisnici %}
+        <div class="class_veslaci">
+
+            <p class="class-name"> Veslač {{i[1]}} </p>  <form action="/index_veslac" method="get">
+            <input type="submit" name="id" value= "{{i[0]}}" </input> </form>
+
+
+        </div>
+        {% endfor %}
+
+
+
+    </div>
+        <div class="right">
+        <form action="/login" method="get">
+                <button class="odjava_korisnika" ></button>
+            </form>
+        </div>
+
+
+
+
+
+
+      </div>
+</main>
+
+</body>
+</html>
